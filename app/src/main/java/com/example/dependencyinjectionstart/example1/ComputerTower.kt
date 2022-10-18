@@ -1,4 +1,4 @@
-package com.example.dependencyinjectionstart.exampel1
+package com.example.dependencyinjectionstart.example1
 
 class ComputerTower(
     val storage: Storage,

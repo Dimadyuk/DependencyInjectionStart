@@ -1,4 +1,4 @@
-package com.example.dependencyinjectionstart.exampel1
+package com.example.dependencyinjectionstart.example1
 
 class Component {
 
@@ -16,7 +16,6 @@ class Component {
     }
 
     fun inject(activity: Activity) {
-        activity.computer = getComputer()
-        activity.keyboard = Keyboard()
+       // activity.keyboard = Keyboard()
     }
 }
