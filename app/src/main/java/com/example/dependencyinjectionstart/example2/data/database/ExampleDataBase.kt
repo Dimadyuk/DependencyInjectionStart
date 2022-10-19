@@ -6,11 +6,12 @@ import com.example.dependencyinjectionstart.R
 import javax.inject.Inject
 
 class ExampleDataBase @Inject constructor(
-    private val context: Context
+    private val context: Context,
+    private val time: Long
 ){
 
     fun method() {
-        Log.d(LOG_TAG, "ExampleDataBase ${context.getString(R.string.app_name)}")
+        Log.d(LOG_TAG, "ExampleDataBase ${context.getString(R.string.app_name)} $time")
     }
 
     companion object {
