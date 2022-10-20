@@ -6,7 +6,6 @@ import com.example.dependencyinjectionstart.example2.presentation.ExampleViewMod
 import dagger.Binds
 import dagger.Module
 import dagger.multibindings.IntoMap
-import dagger.multibindings.StringKey
 
 @Module
 interface ViewModelModule {
@@ -14,10 +13,10 @@ interface ViewModelModule {
     @IntoMap
     @ViewModelKey(ExampleViewModel::class)
     @Binds
-    fun ExampleViewModel(impl: ExampleViewModel): ViewModel
+    fun bindExampleViewModel(impl: ExampleViewModel): ViewModel
 
     @IntoMap
     @ViewModelKey(ExampleViewModel2::class)
     @Binds
-    fun ExampleViewModel2(impl: ExampleViewModel2): ViewModel
+    fun bindExampleViewModel2(impl: ExampleViewModel2): ViewModel
 }
